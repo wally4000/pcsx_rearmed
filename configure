@@ -550,6 +550,7 @@ echo >> $config_mak
 
 if [ "$platform" = "libretro" ]; then
   echo "TARGET = libretro.so" >> $config_mak
+  
 fi
 echo "ARCH = $ARCH" >> $config_mak
 echo "PLATFORM = $platform" >> $config_mak
