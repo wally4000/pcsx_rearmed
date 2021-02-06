@@ -134,6 +134,10 @@ endif
 OBJS += plugins/cdrcimg/cdrcimg.o
 
 # libchdr
+<<<<<<< HEAD
+=======
+ifeq "$(HAVE_CHD)" "1"
+>>>>>>> 75c7be9bff66cd2b8e45ce71d3685daefc4196de
 CFLAGS += -Ideps/libchdr
 OBJS += deps/crypto/md5.o
 OBJS += deps/crypto/sha1.o
@@ -184,8 +188,14 @@ else
 endif
 
 CFLAGS += -Ideps/crypto -Ideps/flac-1.3.2/include -Ideps/flac-1.3.2/src/libFLAC/include -Ideps/flac-1.3.2/src/libFLAC/include -Ideps/lzma-16.04/C
+<<<<<<< HEAD
 CFLAGS += -D'PACKAGE_VERSION="1.3.2"' -DFLAC__HAS_OGG=0 -DFLAC__NO_DLL -DHAVE_LROUND -DHAVE_STDINT_H -DHAVE_STDLIB_H -DFLAC__NO_DLL -D_7ZIP_ST
 LDFLAGS += -lm
+=======
+CFLAGS += -DHAVE_CHD -D'PACKAGE_VERSION="1.3.2"' -DFLAC__HAS_OGG=0 -DFLAC__NO_DLL -DHAVE_LROUND -DHAVE_STDINT_H -DHAVE_STDLIB_H -DFLAC__NO_DLL -D_7ZIP_ST
+LDFLAGS += -lm
+endif
+>>>>>>> 75c7be9bff66cd2b8e45ce71d3685daefc4196de
 
 
 # dfinput
