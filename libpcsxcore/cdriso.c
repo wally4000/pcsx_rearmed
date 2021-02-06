@@ -1404,7 +1404,7 @@ static long CALLBACK ISOopen(void) {
 	}
 	#ifdef HAVE_CHD
 	else if (handlechd(GetIsoFile()) == 0) {
-		strcat(image_str, "[+chd]");
+		SysPrintf("[+chd]");
 		CDR_getBuffer = ISOgetBuffer_chd;
 		cdimg_read_func = cdread_chd;
 	}

@@ -707,7 +707,7 @@ fail:
 
 static const char *filter_exts[] = {
 	"bin", "img", "mdf", "iso", "cue", "z",
-	"bz",  "znx", "pbp", "cbn", NULL
+	"bz",  "znx", "pbp", "cbn","chd",  NULL
 };
 
 // rrrr rggg gggb bbbb
